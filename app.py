@@ -43,7 +43,7 @@ def login():
         username = request.form['username']
         password = request.form['password']
         site_id = request.form['site_id']
-        server_url = request.form.get('server_url', 'https://us-east-1.online.tableau.com')
+        server_url = request.form.get('server_url', 'https://prod-in-a.online.tableau.com')
         
         try:
             tableau = TableauAPI(server_url, site_id)
